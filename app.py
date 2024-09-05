@@ -7,7 +7,7 @@ flaskServerUrl = "http://10.30.232.34:8081"
 while True:
     try:
         r = get(flaskServerUrl, timeout=1)
-        print(r.text)
+        print(f"Server message: {r.text}")
     except:
         print("Server unreachable")
 
